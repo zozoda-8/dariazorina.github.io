@@ -65,15 +65,12 @@ document.querySelectorAll('.btn,.price-card button').forEach(button=>{updateButt
 // The footer fills the viewport; its reveal and header theme reverse on scroll.
 const closingSection=document.querySelector('.closing');
 const siteHeader=document.querySelector('header');
-const heroSection=document.querySelector('.hero-section');
 let footerFrame=0;
 const updateFooterReveal=()=>{
  footerFrame=0;
  const headerRect=siteHeader.getBoundingClientRect();
  const headerTop=headerRect.top;
  document.documentElement.style.setProperty('--site-header-height',`${headerRect.height}px`);
- const heroRect=heroSection.getBoundingClientRect();
- siteHeader.classList.toggle('is-hero-overlap',heroRect.top<=headerRect.bottom && heroRect.bottom>headerRect.bottom);
  const viewportHeight=window.innerHeight;
  const footerTop=closingSection.getBoundingClientRect().top;
  const progress=Math.max(0,Math.min(1,(viewportHeight-footerTop)/Math.max(1,viewportHeight)));

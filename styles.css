@@ -389,7 +389,6 @@ header.is-footer-joined{background:transparent;color:var(--color-text-inverse);b
 /* Full-viewport hero with a shared page surface. */
 :root{--site-header-height:69px;--hero-space:clamp(32px,7svh,96px)}
 @media(max-width:700px){:root{--site-header-height:61px}}
-header.is-hero-overlap{background:transparent;border-bottom-color:transparent}
 .hero-section .hero{min-height:calc(100svh - var(--site-header-height));padding-block:var(--hero-space)}
 @media(min-width:701px){.hero-section .hero-photo-frame{max-width:min(470px,calc(100svh - var(--site-header-height) - 2 * var(--hero-space)))}}
 .hero-section{margin-top:calc(-1 * var(--site-header-height));padding-top:var(--site-header-height);min-height:100svh;background:var(--color-bg-page)}
